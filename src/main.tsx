@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import Timer from './pages/Timer';
 
 const router = createBrowserRouter([
     {
         path:"/",
-        element: <div>hello</div>
+        element: <Timer/>
     }
 ])
 
