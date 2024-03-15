@@ -2,7 +2,14 @@ export function getTimerDuration() {
     if (localStorage.getItem("timerDuration")) {
         return parseInt(localStorage.getItem("timerDuration")!);
     }
-    return 10;
+    return 3600;
+}
+
+export function getTimerType() {
+    if (localStorage.getItem("timerType")) {
+        return localStorage.getItem("timerType");
+    }
+    return "regular";
 }
 
 export function prettyTime(t:number) {
